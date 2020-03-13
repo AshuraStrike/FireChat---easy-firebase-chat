@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ListView
+                android:id="@+id/list_view_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="16dp"
+                android:divider="@android:color/transparent"
+                android:paddingBottom="54dp" />
+
+            <include layout="@layout/item_sendinput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/list_view_rooms"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

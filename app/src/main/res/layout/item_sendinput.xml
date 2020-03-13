@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_media_play"
+        android:id="@+id/fab"
+        android:layout_marginBottom="8dp"
+        android:tint="@android:color/white"
+            android:layout_alignBottom="@id/inputLayout"
+        android:layout_alignParentRight="true"
+        app:fabSize="mini"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/fab"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/inputLayout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="always"
+                android:hint="New Message"
+                tools:text="Este es un texto muy largo alch porque si no es largo no es sencillo notar la deformidad que puede ser causada alv en esto."
+                android:id="@+id/input"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
