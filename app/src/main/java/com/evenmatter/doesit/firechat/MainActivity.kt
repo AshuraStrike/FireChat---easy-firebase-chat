@@ -33,8 +33,6 @@ class MainActivity : AppCompatActivity() {
 
         initAuthListener()
 
-/**("TODO: En algun lugar algo hace que la primera carga no jale alv morro")*/
-
         // Name.... set text app name
 
         editText = findViewById(R.id.input) as EditText
@@ -125,25 +123,5 @@ class MainActivity : AppCompatActivity() {
             mAuth.removeAuthStateListener(mAuthListener)
         }
     }
-
-    /*fun requestUsername() {
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Enter Username:")
-
-        val inputField = EditText(this)
-
-        builder.setCancelable(false)
-        builder.setView(inputField)
-        builder.setPositiveButton("OK", DialogInterface.OnClickListener { _, _ ->
-            name = inputField.text.toString()
-            if(name.isBlank()) requestUsername()
-        })
-
-        builder.setNegativeButton("Cancel", DialogInterface.OnClickListener { dialog, _ ->
-            dialog.cancel()
-            requestUsername()
-        })
-
-        builder.show()
-    }*/
+    
 }
