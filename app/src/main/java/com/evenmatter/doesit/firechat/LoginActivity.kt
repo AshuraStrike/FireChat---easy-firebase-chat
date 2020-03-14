@@ -27,9 +27,6 @@ class LoginActivity : AppCompatActivity() {
         val email = findViewById(R.id.textEditMail) as EditText
         val password = findViewById(R.id.textEditPassword) as EditText
 
-        email.setText("spartan.alexjoy1@gmail.com")
-        password.setText("arekusanderu")
-
         register.setOnClickListener {
             startActivity(Intent(this,RegisterActivity::class.java))
         }
